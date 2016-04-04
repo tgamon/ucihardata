@@ -108,7 +108,7 @@ processuciHARstudy <- function(download=FALSE){
     
     tidy <- dcast(obsAllMelt, subjectid + activityname ~ variable, mean)
     
-    #reset to current directory
+    #reset to original working directory
     setwd(curwd)
     
     # return the tidy data to user
